@@ -52,12 +52,12 @@ main {
 	display: flex;
 }
 
-.component--state {
+.component__state {
 	display: flex;
 	flex-direction: column;
 }
 
-.component--state > span:nth-child(1) {
+.component__state > span:nth-child(1) {
 	margin-bottom: var(--spacing-small);
 }
 	
@@ -66,6 +66,10 @@ main {
 /* Univesal classes */
 .inline-block {
 	display: inline-block;
+}
+
+.position-relative {
+	position: relative;
 }
 
 .pointer-events-inactive {

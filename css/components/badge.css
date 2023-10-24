@@ -11,3 +11,30 @@
 	font-weight: 500;
 }
 
+
+.component__badge.inline-block {	/*  Center text in info badge */
+	text-align: center;
+}
+
+.component__badge--alert {
+	width: 1.5rem;
+	background: var(--color-alert);
+	color: var(--color-background);
+}
+
+.badge--alert-example {
+	position: absolute;
+	right: -0.3rem;
+	top: -0.8rem;
+}
+
+.badge__button-example:hover .badge--alert-example{ 	/* Bounce badge on button hover */
+	animation: bounce 1s ease-out both;
+	}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+	40% {transform: translateY(-15px);} 
+	60% {transform: translateY(-7px);} 
+	} 
+
