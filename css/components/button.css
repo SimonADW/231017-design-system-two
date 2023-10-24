@@ -25,10 +25,5 @@ button:hover {
 }
 
 button:active {
-	background: var(--color-tercary);;
-
-}
-
-.pointer-events-inactive {
-	pointer-events: none;
+	background: var(--color-tercary);
 }

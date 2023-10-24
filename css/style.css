@@ -54,7 +54,20 @@ main {
 
 .component--state {
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 }
 
+.component--state > span:nth-child(1) {
+	margin-bottom: var(--spacing-small);
+}
+	
 
+
+/* Univesal classes */
+.inline-block {
+	display: inline-block;
+}
+
+.pointer-events-inactive {
+	pointer-events: none;
+}
