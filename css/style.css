@@ -1,0 +1,60 @@
+:root {
+	font-size: var(--font-size-base);
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	display: flex;
+}
+
+h3 {
+	font-weight: 600;
+}
+
+/*  Sidebar navigation */
+nav {
+	flex-basis: 10rem;
+	padding: 1rem;
+}
+
+.navButton {
+	background: transparent;
+	border: none;
+	padding: none;
+	height: fit-content;
+}
+
+.navButton:hover {
+	background: transparent;
+	font-weight: 700;
+}
+
+.navButton--active {
+	font-weight: 600;
+}
+
+
+/*  Components section */
+
+main {
+	display: flex;
+	flex-direction: column;	
+}
+
+.component {
+	display: none;
+	flex-direction: column;
+	gap: var(--spacing-small);
+	margin: var(--spacing-large);
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component--state {
+	display: flex;
+	flex-direction: column;	
+}
+
+

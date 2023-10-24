@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Design System Two</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/components/accordion.css">
+	<link rel="stylesheet" href="css/components/button.css">
+	<link rel="stylesheet" href="css/components/badge.css">
+	<link rel="stylesheet" href="css/components/breadcrumbs.css">
+	<link rel="stylesheet" href="css/components/card.css">
+	<link rel="stylesheet" href="css/components/checkbox.css">
+	<link rel="stylesheet" href="css/components/radio.css">
+	<link rel="stylesheet" href="css/components/drawer.css">
+	<link rel="stylesheet" href="css/components/tab.css">
+	<link rel="stylesheet" href="css/components/toast.css">
+	<link rel="stylesheet" href="css/components/stack.css">
+	<link rel="stylesheet" href="css/components/stepper.css">
+
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="main.js" defer></script>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><button class="navButton" data-component="accordion">Accordion</button></li>
+			<li><button class="navButton" data-component="button">Button</button></li>
+			<li><button class="navButton" data-component="badge">Badge</button></li>
+			<li><button class="navButton" data-component="breadcrumb">Breadcrumb</button></li>
+			<li><button class="navButton" data-component="card">Card</button></li>
+			<li><button class="navButton" data-component="checkkbox">Checkbox</button></li>
+			<li><button class="navButton" data-component="radio">Radio</button></li>
+			<li><button class="navButton" data-component="drawer">Drawer</button></li>
+			<li><button class="navButton" data-component="tab">Tab</button></li>
+			<li><button class="navButton" data-component="toast">Toast</button></li>
+			<li><button class="navButton" data-component="stack">Stack</button></li>
+			<li><button class="navButton" data-component="stepper">Stepper</button></li>
+		</ul>
+	</nav>	
+
+	<main>
+
+		<!-- Accordion Section -->		
+		<section class="component" data-name="accordion">
+			<h3>Accordion</h3>
+			<div class="component--state">
+				<span>Normal</span>
+				<button class="accordion__state--button pointer-events-inactive"><span class="accordion__button--text">Accordion title</span></button>
+			</div>
+
+			<div class="component--state">
+				<span>Hover</span>
+				<button class="accordion__state--button accordion__state--hover pointer-events-inactive "><span class="accordion__button--text">Accordion title</span></button>
+			</div>
+
+			<div class="component--state">
+				<span>Expanded</span>
+				<button class="accordion__state--button accordion__button--expanded"><span class="accordion__button--text">Accordion title</span></button>
+				<div class="accordion__content accordion--visible">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, obcaecati?
+				</div>
+			</div>
+
+			<div class="component--state">
+				<span>Example</span>
+				<button class="accordion__state--button accordion__example--button"><span class="accordion__button--text">Accordion title</span></button>
+				<div class="accordion__content accordion__example__content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, obcaecati?
+				</div>
+			</div>		
+		</section>
+		
+
+
+		<!-- Button Section -->	
+		<section class="component" data-name="button">
+			<h3>Button</h3>
+			
+			<div class="component--state">
+				<span>Normal</span>
+				<button class="pointer-events-inactive">Click me</button>
+			</div>
+			<div class="component--state">
+				<span>Hover</span>
+				<button class="pointer-events-inactive button--hovered">Click me</button>
+			</div>
+			<div class="component--state">
+				<span>Expanded</span>
+				<button class="pointer-events-inactive button--active">Click me</button>
+			</div>
+			<div class="component--state">
+				<span>Example</span>
+				<button>Click me</button>				
+			</div>
+		</section>
+
+		<section class="component" data-name="breadcrumb">
+			<div class="component--state">
+				<span>Normal</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Hover</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Expanded</span>
+				<button></button>
+			</div>
+			<div class="component--state">
+				<span>Example</span>
+				<button></button>				
+			</div>
+		</section>
+
+
+
+	</main>
+</body>
+</html>
